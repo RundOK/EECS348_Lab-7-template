@@ -1,9 +1,6 @@
 #include "football.h"
 #include <stdio.h>
 
-#include "football.h"
-#include <stdio.h>
-
 void findCombinations(int score, int td2pt, int tdFG, int td, int fg, int safety, int td2ptVal, int tdFGVal, int tdVal, int fgVal, int safetyVal) {
     //base case: if the score is 0, print the combination
     if (score == 0) {
@@ -27,6 +24,12 @@ void findCombinations(int score, int td2pt, int tdFG, int td, int fg, int safety
     if (score >= safetyVal) 
         findCombinations(score - safetyVal, td2pt, tdFG, td, fg, safety + 1, td2ptVal, tdFGVal, tdVal, fgVal, safetyVal);
 }
+
+int count_combinations(int points) {
+    int combinations = 0;
+    return combinations;
+}
+
 
 int main() {
     int score;
