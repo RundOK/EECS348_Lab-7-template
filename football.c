@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 //Recursive function to find all possible combinations of scoring plays
-void findCombinations(int score, int td2pt, int tdFG, int td, int fg, int safety, 
-                      int td2ptVal, int tdFGVal, int tdVal, int fgVal, int safetyVal) {
+void findCombinations(int score, int td2pt, int tdFG, int td, int fg, int safety, int td2ptVal, int tdFGVal, int tdVal, int fgVal, int safetyVal) {
     //Base case: if the score is 0, print the current combination
     if (score == 0) {
         printf("%d TD + 2pt, %d TD + FG, %d TD, %d FG, %d Safety\n", td2pt, tdFG, td, fg, safety);
