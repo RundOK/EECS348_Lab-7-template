@@ -1,3 +1,12 @@
+//Program Name: EECS 348 Lab 7 problem 2
+//Program Discription and Purpose: converting temp from one unit to another based on user choice
+//Input: provided by user (user is prompted)
+//Output: converted temp and weather advisory
+//Collaborators: no collaborators
+//Sources: ChatGPT (used chatgpt for error checking and some print statments)
+//Author Name: Rund Al-kofahi
+//Creation Date: 3/23/2025
+
 #include "temperature.h"
 
 float celsius_to_fahrenheit(float celsius) {  //function to convert a C temp to F

@@ -1,3 +1,12 @@
+//Program Name: EECS 348 Lab 7 problem 1
+//Program Discription and Purpose: finding possible combinations for a given score
+//Input: provided by user (user is prompted)
+//Output: possible combinations
+//Collaborators: no collaborators
+//Sources: ChatGPT (used chatgpt for error checking and to check the iterations)
+//Author Name: Rund Al-kofahi
+//Creation Date: 3/23/2025
+
 #include "football.h"  //including the header file
 #include <stdio.h>  
 
