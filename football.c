@@ -20,6 +20,26 @@ void find_combinations(int score) {
     }
 }
 
+int count_combinations(int points) {
+    int count = 0;
+
+    for (int td2 = 0; td2 * 8 <= points; td2++) {
+        for (int td_fg = 0; td_fg * 7 <= points; td_fg++) {
+            for (int td = 0; td * 6 <= points; td++) {
+                for (int fg = 0; fg * 3 <= points; fg++) {
+                    for (int safety = 0; safety * 2 <= points; safety++) {
+                        if (td2 * 8 + td_fg * 7 + td * 6 + fg * 3 + safety * 2 == points) {
+                            count++;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    return count;
+}
+
 int main() {
     int score;
     
