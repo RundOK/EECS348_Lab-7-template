@@ -4,6 +4,7 @@
 /* Add any function signatures you need here but do not modify the existing ones */
 float fahrenheit_to_kelvin(float fahrenheit);
 float kelvin_to_fahrenheit(float kelvin);
+void categorize_temperature(float celsius);
 
 /**
  * @brief Convert temperature in Celsius to Fahrenheit
