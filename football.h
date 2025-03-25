@@ -4,6 +4,7 @@
 /* Add any function signatures you need here but do not modify the existing ones */
 
 void find_combinations(int score);
+int main();
 
 /**
  * @brief Return the number of possible combinations to add up to `points`

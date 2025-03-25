@@ -5,6 +5,7 @@
 float fahrenheit_to_kelvin(float fahrenheit);
 float kelvin_to_fahrenheit(float kelvin);
 void categorize_temperature(float celsius);
+int main();
 
 /**
  * @brief Convert temperature in Celsius to Fahrenheit
