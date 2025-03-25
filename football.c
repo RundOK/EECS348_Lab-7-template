@@ -59,10 +59,19 @@ int main() {
     
     while (1) { //while loop to keep prompting the user for input 
         printf("Enter the NFL score (0 or 1 to STOP): ");
-        scanf("%d", &score);  //scanning for user input
+        if (scanf("%d", &score) != 1) {  //checking for invalid input
+            printf("Invalid input. Please enter a valid integer.\n");  //if input it invalid, print that
+            while (getchar() != '\n');  //clearing input buffer
+            continue;
+        }
         
-        if (score <= 1) { //if user inputs a score of 0 or 1,
-            break;  //loop breaks 
+        if (score < 0) {  //checking if the score is negative
+            printf("Error: Negative scores are invalid. Please enter a valid NFL score.\n");  //if input it invalid, print that
+            continue;
+        }
+
+        if (score <= 1) { // If user inputs a score of 0 or 1,
+            break;  // Loop breaks 
         }
         
         find_combinations(score); //calling find_combinations to print all possible combinations for given score
