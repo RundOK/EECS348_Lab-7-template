@@ -25,8 +25,6 @@ float kelvin_to_fahrenheit(float kelvin) {
     return celsius_to_fahrenheit(kelvin_to_celsius(kelvin));
 }
 
-
-#ifndef temperature.h
 void categorize_temperature(float celsius) {
     printf("Temperature category: ");
     if (celsius < 0) {
@@ -90,4 +88,3 @@ int main() {
     
     return 0;
 }
-#endif

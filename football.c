@@ -40,8 +40,6 @@ int count_combinations(int points) {
     return count;
 }
 
-
-#ifndef football.h //to compile 'main()' only when not testing
 int main() {
     int score;
     
@@ -58,4 +56,3 @@ int main() {
     
     return 0;
 }
-#endif
