@@ -26,7 +26,7 @@ float kelvin_to_fahrenheit(float kelvin) {
 }
 
 
-#ifndef TESTING
+#ifndef temperature.h
 void categorize_temperature(float celsius) {
     printf("Temperature category: ");
     if (celsius < 0) {
