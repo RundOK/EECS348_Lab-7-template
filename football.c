@@ -40,19 +40,4 @@ int count_combinations(int points) {
     return count;
 }
 
-int main() {
-    int score;
-    
-    while (1) {
-        printf("Enter the NFL score (0 or 1 to STOP): ");
-        scanf("%d", &score);
-        
-        if (score <= 1) {
-            break;
-        }
-        
-        find_combinations(score);
-    }
-    
-    return 0;
-}
+
