@@ -3,7 +3,7 @@
 
 /* Add any function signatures you need here but do not modify the existing ones */
 
-void findCombinations(int score, int td2pt, int tdFG, int td, int fg, int safety, int td2ptVal, int tdFGVal, int tdVal, int fgVal, int safetyVal);
+void find_combinations(int score);
 
 /**
  * @brief Return the number of possible combinations to add up to `points`
